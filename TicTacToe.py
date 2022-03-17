@@ -142,13 +142,6 @@ while True:
             if posx>400 and posx<600 and posy>500 and posy<700 and board[2][2]==0:
                 board[2][2] = setMarker(2,2,circ)
                 circ = switch(circ)
-
-
-
-
-        if keys[pygame.K_k]:
-            for y in board:
-                print(y)
         checkWinner(board)
         updateBoard()
         pygame.display.update()
