@@ -63,28 +63,28 @@ def checkWinner(board):
         if board[i][0]==1 and board[i][1]==1 and board[i][2]==1:
             redWins()
             break
-        if board[i][0]==2 and board[i][1]==2 and board[i][2]==2:
+        elif board[i][0]==2 and board[i][1]==2 and board[i][2]==2:
             blueWins()
             break
         #Checks all columns
-        if board[0][i]==1 and board[1][i]==1 and board[2][i]==1:
+        elif board[0][i]==1 and board[1][i]==1 and board[2][i]==1:
             redWins()
             break
-        if board[0][i]==2 and board[1][i]==2 and board[2][i]==2:
+        elif board[0][i]==2 and board[1][i]==2 and board[2][i]==2:
             blueWins()
             break
         # Checks all diagonal (top left to bottom right)
-        if board[0][0]==1 and board[1][1]==1 and board[2][2]==1:
+        elif board[0][0]==1 and board[1][1]==1 and board[2][2]==1:
             redWins()
             break
-        if board[0][0]==2 and board[1][1]==2 and board[2][2]==2:
+        elif board[0][0]==2 and board[1][1]==2 and board[2][2]==2:
             blueWins()
             break
         # Checks all diagonal (bottom left to top right)
-        if board[0][2]==1 and board[1][1]==1 and board[2][0]==1:
+        elif board[0][2]==1 and board[1][1]==1 and board[2][0]==1:
             redWins()
             break
-        if board[0][2]==2 and board[1][1]==2 and board[2][0]==2:
+        elif board[0][2]==2 and board[1][1]==2 and board[2][0]==2:
             blueWins()
             break
 def updateBoard():
